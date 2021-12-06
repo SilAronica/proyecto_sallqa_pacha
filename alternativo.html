@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sallqa Pacha</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+    <link rel="stylesheet" href="static/css/alternativo.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="static/img/logo.png"></a>
+        <ul id= "menu" class="menu">
+            <li data-menuanchor="sallqa pacha" class="active">
+                <a href="#sallqa pacha">SALLQA PACHA</a></li>
+            <li data-menuanchor="quienes somos" class="active">
+                <a href="{% url 'app_acercade:boton_acercade' %}">QUIÉNES SOMOS</a></li>
+            <li data-menuanchor="ods" class="active">
+                <a href="{% url 'app_objetivosonu:boton_objetivosONU' %}">ODS</a>
+            </li>
+            <li data-menuanchor="foros" class="active">
+                <a href="{% url 'app_nameforogeneral:boton_forogeneral' %}">FOROS</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main id="fullpage">
+        <header class="section header">
+            <div class="contenedor-titulo">
+                <h1 class="titulo">
+                    <span class="texto-blanco">SALLQA PACHA</span>
+                </h1>
+                <p class="texto-blanco">El futuro no es desechable</p>
+            </div>
+            <div class="contenedor-icono">
+                <p><a href="quienes somos" class="texto-blanco"><i class="fas fa-angle-double-down"></i></p>
+            </div>
+        
+            <!-- VIDEO-->
+            <video loop muted data-autoplay class="bg-video">
+                <source src="https://images.app.goo.gl/yp7TrAv8krRXmoo5A" type="video/mp4">
+            </video>
+        </header>
+        <section class="section">
+            <h1>QUIÉNES SOMOS</h1>
+        </section>
+        <section class="section" >
+            <h1>ODS</h1>
+        </section>
+        <footer class="section">
+           <h2>FOROS</h2>
+        </footer>
+       
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>     
+    <script src="static/js/alternativo.js"></script>
+</body>  
+</html>
+    
+
+
+
