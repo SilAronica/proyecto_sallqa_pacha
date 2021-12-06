@@ -85,6 +85,10 @@ img{
 .salqua{
     color: var(--white-color);
     display: flex;
+.sallqa{
+    color: var(--white-color);
+    display: flex;
+    text-shadow: 2px;
 }
 .header nav ul{
     list-style: none;
