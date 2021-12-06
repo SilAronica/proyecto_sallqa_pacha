@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sallqua Pacha</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="nav__perfil">
+                <h1 class="salqua">Sallqua Pacha</h1>
+               
+                </div>
+                
+
+
+                <ul>
+                    <li><a href="#" >INICIO</a></li>
+                    <li><a href="{% url 'app_nameforogeneral:boton_forogeneral' %}">Blog</a></li>
+                    <li><a href="{% url 'app_acercade:boton_acercade' %}">Acerca De</a></li>
+                    <li><a href="{% url 'app_objetivosonu:boton_objetivosONU' %}">Objetivos ONU</a>
+                    <!---->
+                    <ul>
+        
+                        <li><a href="#">Pobreza</a>
+                        <ul>
+                            <li><a href="#">Fin de la pobreza</a></li>
+                            <li><a href="#">Hambre Cero</a></li>
+                        </ul>
+                        </li>
+        
+                        <li><a href="#">Educación y Trabajo</a>
+                        <ul>
+                            <li><a href="#">Educación de calidad</a></li>
+                            <li><a href="#">Trabajo decente</a></li>
+                            <li><a href="#">Industria</a></li>
+                            <li><a href="#">No desigualdades</a></li>
+                            <li><a href="#">Ciudades sostenibles</a></li>
+                        </ul>
+                        </li>
+        
+                        <li><a href="#">Cambio Climático</a>
+                        <ul>
+                            <li><a href="#">Energía no contaminante</a></li>
+                            <li><a href="#">Producción y consumo responsable</a></li>
+                            <li><a href="#">Acción por el clima</a></li>
+                            <li><a href="#">Vida submarina</a></li>
+                            <li><a href="#">Vida ecosistemas terrestres</a></li>
+                        </ul>
+                        </li>
+        
+                        <li><a href="#">Comunidad</a>
+                        <ul>
+                            <li><a href="#">Salud y Bienestar</a></li>
+                            <li><a href="#">Igualdad de género</a></li>
+                            <li><a href="#">Agua limpia</a></li>
+                            <li><a href="#">Paz y justicia</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                    <!---->
+
+
+            <!-- ============== MENU NAV BAR DERECHA ===========-->
+                <div>
+                    <ul>
+                        <li>
+                            <a href="{% url 'app_iniciodesesion:boton_iniciodesesion' %}">Iniciar Sesión</a>
+                            <hr>
+                            <a href="{% url 'app_registrar:boton_registrar' %}">Registrar</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+
+
+
+
+	{% block contenido %}
+
+
+ 
+	{% endblock contenido %}
+
+
+</body>
+

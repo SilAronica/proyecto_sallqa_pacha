@@ -82,6 +82,9 @@ img{
     align-items:center;
 }
 
+.salqua{
+    color: var(--white-color);
+    display: flex;
 .sallqa{
     color: var(--white-color);
     display: flex;
