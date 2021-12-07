@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+from django.urls import reverse_lazy
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,6 +29,12 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+AUTH_USER_MODEL = 'iniciarsesion.Usuario'
+
+LOGIN_REDIRECT_URL = reverse_lazy('inicio')
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+LOGIN_URL = reverse_lazy('login')
 
 INSTALLED_APPS = [
     'django.contrib.admin',

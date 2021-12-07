@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+ ahfuqw9qfqwkdqwid
     <header class="header">
         <nav>
             <div class="nav__perfil">
@@ -68,16 +68,26 @@
                     <!---->
 
 
-            <!-- ============== MENU NAV BAR DERECHA ===========-->
+            <!-- ============== 
+                            <a href="{% url 'app_iniciodesesion:boton_iniciodesesion' %}">Iniciar Sesión</a> 
+                                <hr>
+                            <a href="{% url 'app_registrar:boton_registrar' %}">Registrar</a>
+                            MENU NAV BAR DERECHA ===========-->
                 <div>
                     <ul>
                         <li>
-                            <a href="{% url 'app_iniciodesesion:boton_iniciodesesion' %}">Iniciar Sesión</a>
-                            <hr>
-                            <a href="{% url 'app_registrar:boton_registrar' %}">Registrar</a>
+                            {% if user.is_authenticated %}
+			                    <span>WELCOME {{ user.username }}</span>
+                                <a href="{% url 'logout' %}">Cerrar sesion</a>
+                                
+                            {% else %}
+                                <a href="{% url 'login' %}">Iniciar Sesión</a>
+                                <a href="">Registrar</a>
+                            {% endif %}
                         </li>
                     </ul>
                 </div>
+            
         </nav>
     </header>
 
