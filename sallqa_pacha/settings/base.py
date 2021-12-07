@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.iniciarsesion',
     'apps.objetivosonu',
     'apps.registrar',
+    'apps.usuarios',
 ]
 
 MIDDLEWARE = [

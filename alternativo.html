@@ -14,20 +14,28 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="static/img/logo.png"></a>
+        <a href="#inicio" class="logotipo">SALLQA PACHA</a>
         <ul id= "menu" class="menu">
-            <li data-menuanchor="sallqa pacha" class="active">
-                <a href="#sallqa pacha">SALLQA PACHA</a></li>
-            <li data-menuanchor="quienes somos" class="active">
-                <a href="{% url 'app_acercade:boton_acercade' %}">QUIÉNES SOMOS</a></li>
+            <li data-menuanchor="inicio" class="active">
+                <a href="#inicio">INICIO</a>
+            </li>
+            <li data-menuanchor="quienes_somos" class="active">
+                <a href="#quienes_somos">QUIÉNES SOMOS</a>
+
+            </li>
             <li data-menuanchor="ods" class="active">
-                <a href="{% url 'app_objetivosonu:boton_objetivosONU' %}">ODS</a>
+                <a href="#ods">ODS</a>
             </li>
             <li data-menuanchor="foros" class="active">
-                <a href="{% url 'app_nameforogeneral:boton_forogeneral' %}">FOROS</a>
+                <a href="#foros">FOROS</a>
+            </li>
+            <li data-menuanchor="iniciar_sesion" class="active" >
+                <a href="#iniciar_sesion">Iniciar Sesión</a>
+            </li>
+            <li>
+                <a href="#registrar">Registrar</a>
             </li>
         </ul>
-
     </nav>
     <main id="fullpage">
         <header class="section header">
@@ -46,14 +54,64 @@
                 <source src="https://images.app.goo.gl/yp7TrAv8krRXmoo5A" type="video/mp4">
             </video>
         </header>
-        <section class="section">
+
+        <section class="section responsables">
+            <article class="slide">
+                <div class="informacion-responsables">
+                    <h1 class="nosotros">QUIÉNES SOMOS</h1>
+                    <p>SALLQA PACHA es una idea que nació de la necesidad de colaborar con un futuro para todos. Por lo tanto, y tomando palabras de la ONU: “Cada uno de los 17 ODS es un elemento constitutivo de la estructura mundial de paz. Resulta fundamental que movilicemos los medios necesarios para su aplicación, entre ellos, los recursos financieros, el diseño y la transferencia de tecnología y la creación de capacidad, así como el papel de las alianzas. Todos saldríamos beneficiados con ello, y cada uno de nosotros puede contribuir de alguna forma al respecto”.</p>
+                    <div class="p">Te invitamos a que seas parte de este gran  sueño!</div>
+                </div>
+            </article>
             <h1>QUIÉNES SOMOS</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla cupiditate ipsam ut voluptates qui mollitia quae nobis id sapiente facere, quo atque veritatis! Eligendi sunt magnam provident, maxime dolorem doloribus.</p>
         </section>
+
         <section class="section" >
             <h1>ODS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil veniam ducimus molestias fuga delectus ratione ab, porro, placeat error, maxime aperiam repudiandae? Vitae, deserunt? Voluptate aperiam eum illum dicta.</p>
+        </ul>
+            <li><a href="#">Pobreza</a>
+                <ul>
+                    <li><a href="#">Fin de la pobreza</a></li>
+                    <li><a href="#">Hambre Cero</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Educación y Trabajo</a>
+                <ul>
+                    <li><a href="#">Educación de calidad</a></li>
+                    <li><a href="#">Trabajo decente</a></li>
+                    <li><a href="#">Industria</a></li>
+                    <li><a href="#">No desigualdades</a></li>
+                    <li><a href="#">Ciudades sostenibles</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Cambio Climático</a>
+                <ul>
+                    <li><a href="#">Energía no contaminante</a></li>
+                    <li><a href="#">Producción y consumo responsable</a></li>
+                    <li><a href="#">Acción por el clima</a></li>
+                    <li><a href="#">Vida submarina</a></li>
+                    <li><a href="#">Vida ecosistemas terrestres</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Comunidad</a>
+                <ul>
+                    <li><a href="#">Salud y Bienestar</a></li>
+                    <li><a href="#">Igualdad de género</a></li>
+                    <li><a href="#">Agua limpia</a></li>
+                    <li><a href="#">Paz y justicia</a></li>
+                </ul>
+            </li>
         </section>
-        <footer class="section">
-           <h2>FOROS</h2>
+        <section class="section" >
+            <h2>FOROS</h2>
+        </section>
+        <footer>
+            <p>Todos los derecho reservados- SALLQA PACHA</p>
         </footer>
        
     </main>

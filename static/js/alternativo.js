@@ -7,19 +7,22 @@ const seccionesPaginaPrincipal = new fullpage('#fullpage', {
     loopBottom: false,
 
     /*---Barra de Navegación---*/
+
     navigation: true,
     menu: '#menu',
-    anchors:['Sallqa Pacha', 'Quiénes somos', 'ODS', 'Foros'],
-    navigationTooltips: ['Sallqa Pacha', 'Quiénes somos', 'ODS', 'Foros'],
+    anchors:['inicio', 'quienes_somos', 'ods', 'foros'],
+    navigationTooltips: ['Inicio', 'Quiénes somos', 'ODS', 'Foros'],
     showAtiveTooltip: false,
-});
 
-    
-    
+
+/*----Secciones*/
+
+    sectionsColor: ['#c2c2c2', '#c2c2c2', '#c2c2c2'],
+    verticalCentered: true,
+});  
     
     /*
-    sectionsColor: ['#000', '#c2c2c2', '#000'],
-    verticalCentered: true,
+    
     controlArrows: true,
     slidesNavigation: false,
     afterLoad: function(origin, detination){

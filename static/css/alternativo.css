@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
 p {
     text-align: right;
     font-size: 35px;
-    padding-right: 150px;
+    padding-right: 90px;
 }
    
 .texto-naranja{
@@ -33,14 +33,15 @@ p {
     color: black;
 }
 /*--- Clases de fullpage---*/
+
 #fp-nav ul li a span {
     background: #dd9714;
 }
 #fp-nav ul li .fp-tooltip {
-    color: #f8cb76;
+    color: #e4dbc9;
 }
 
-/*---Menú de navegción*/
+/*---Menú de navegación*/
 
 .nav {
     position: fixed;
@@ -51,9 +52,37 @@ p {
     width: 100%;
     margin: 0;
     padding: 10px 20px;
+}
 
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    color: #f7eacf;
+    transition: .5s ease;
+    
+}
+.nav li.active {
+    border-bottom: 2px solid #dd9714;
+}
+
+.menu li a {
+    transition: .5s;
+    margin: 0;
+    padding: 0;
 
 }
+
+.menu li.active a,
+.menu li:hover a {
+    color:#dd9714 ;
+}
+
+
 
 /* Header*/
 .header{
@@ -74,16 +103,38 @@ p {
 .header .titulo {
     text-align: right;
     font-size: 70px;
-    padding-right: 190px;
+    padding-right: 50px;
+    padding-top: 90px;
 }
 
 .header .contenedor-icono {
-    position:relative;
-    z-index: 99;
+    position:absolute;
+    z-index: 70;
     bottom: 3%;
     left: 50%;
     font-size: 40px;
     animation: bajar-subir 1s ease infinite;
+}
+
+
+
+/*---Section--*/
+
+.section {
+    text-align: right;
+    font-size: 25px;
+    padding-right: 190px;
+}
+
+.footer {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #f6edda;
+    transition: .5s ease;
 }
 
 /* Videos
@@ -110,3 +161,7 @@ p {
     100% { transform: translateY(20px); }
 
 }
+
+/*----QUIENES SOMOS---*/
+
+
